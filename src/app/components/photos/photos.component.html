@@ -1,0 +1,15 @@
+<div class="d-flex flex-wrap">
+<div class="card" *ngFor="let item of photos" style="width: 18rem;">
+  <img class="card-img-top" src="{{item.url}}">
+  <div class="card-body">
+    <div class="card-title">
+      {{item.title}}
+    </div>
+    <div class="card-text">
+      <button class="btn btn-primary" (click)="deletePhoto(item.id)">Elimina</button>
+      <button class="btn btn-primary" (click)="like()">Mi piace</button>
+    </div>
+  </div>
+  </div>
+</div>
+
